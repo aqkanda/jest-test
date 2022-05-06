@@ -1,5 +1,3 @@
-const fetchData = () => {
+export const fetchData = () => {
   return Promise.resolve("peanut butter");
 };
-
-module.exports = fetchData;

@@ -1,7 +1,7 @@
-const forEachTest = require("./foreach");
+import { forEach } from "./foreach";
 
 const mockCallback = jest.fn((x) => 42 + x);
-forEachTest([0, 1], mockCallback);
+forEach([0, 1], mockCallback);
 
 expect(mockCallback.mock.calls.length).toBe(2);
 

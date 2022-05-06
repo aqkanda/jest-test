@@ -1,7 +1,7 @@
-const asyncTest = require("./fetchData");
+import { fetchData } from "./fetchData";
 
 test("the data is peanut butter", async () => {
-  const data = await asyncTest();
+  const data = await fetchData();
   expect(data).toBe("peanut butter");
 });
 
@@ -14,7 +14,7 @@ test("the data is peanut butter", async () => {
 //   }
 // });
 
-test("the data is peanut butter", async () => {
+test("the data is peanut butter2", async () => {
   await expect(fetchData()).resolves.toBe("peanut butter");
 });
 
