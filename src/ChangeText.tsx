@@ -4,8 +4,10 @@ export const ChangeText: React.FC = () => {
   const [isText, changeText] = useState("Hello Wolrd!");
   const inputRef = useRef<HTMLInputElement>(null);
   const onClick = () => {
-    if (inputRef.current) changeText(inputRef.current.value);
-    inputRef.current.value = "";
+    if (inputRef.current) {
+      changeText(inputRef.current.value);
+      inputRef.current.value = "";
+    }
   };
   return (
     <div>
