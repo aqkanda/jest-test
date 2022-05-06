@@ -1,3 +1,4 @@
+//@ts-ignore
 const shoppingList = [
   "diapers",
   "kleenex",

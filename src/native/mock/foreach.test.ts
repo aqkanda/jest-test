@@ -3,8 +3,9 @@ import { forEach } from "./foreach";
 const mockCallback = jest.fn((x) => 42 + x);
 forEach([0, 1], mockCallback);
 
-expect(mockCallback.mock.calls.length).toBe(2);
-
+test("呼び出し回数", () => {
+  expect(mockCallback.mock.calls.length).toBe(0);
+});
 // // The first argument of the first call to the function was 0
 // expect(mockCallback.mock.calls[0][0]).toBe(0);
 
